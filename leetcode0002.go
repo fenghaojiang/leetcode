@@ -6,7 +6,7 @@
  * }
  */
 
- func addTwoNumbers(l1 *ListNode, l2 *ListNode) *ListNode {
+func addTwoNumbers(l1 *ListNode, l2 *ListNode) *ListNode {
 	head := new(ListNode)
 	cur := head
 	carry := 0
