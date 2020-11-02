@@ -4,14 +4,18 @@ import (
 	"fmt"
 )
 
-func canWinNim(n int) bool {
-	if n%4 != 0 {
-		return true
+func findComplement(num int) int {
+	temp := num
+	n := 1
+	for temp > 0 {
+		n = n << 1
+		temp = temp >> 1
 	}
-	return false
+	n = n - 1
+	return num ^ n
 }
 
 func main() {
-	num := 4
-	fmt.Println(canWinNim(num))
+	num := 5
+	fmt.Println(findComplement(num))
 }
