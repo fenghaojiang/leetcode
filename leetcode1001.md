@@ -16,3 +16,11 @@ https://leetcode-cn.com/problems/two-sum/
 
 来源：力扣（LeetCode）
 链接：https://leetcode-cn.com/problems/two-sum
+
+golang:
+
+```go
+func twoSum(nums []int, target int) []int {
+	
+}
+```
