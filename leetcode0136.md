@@ -22,6 +22,6 @@
 
 ```go
 func singleNumber(nums []int) int {
-    
+
 }
 ```
