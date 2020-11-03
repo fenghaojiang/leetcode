@@ -26,3 +26,18 @@
 
 来源：力扣（LeetCode）
 链接：https://leetcode-cn.com/problems/lowest-common-ancestor-of-a-binary-search-tree  
+
+```go
+/**
+ * Definition for a binary tree node.
+ * type TreeNode struct {
+ *     Val   int
+ *     Left  *TreeNode
+ *     Right *TreeNode
+ * }
+ */
+
+func lowestCommonAncestor(root, p, q *TreeNode) *TreeNode {
+	
+}
+```
