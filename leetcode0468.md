@@ -48,6 +48,10 @@ IPv6 地址由 8 组 16 进制的数字来表示，每组表示 16 比特。�
 输入：IP = "1e1.4.5.6"
 输出："Neither"
 
+来源：力扣（LeetCode）
+链接：https://leetcode-cn.com/problems/validate-ip-address
+
+
 ```go
 func validIPAddress(IP string) string {
     
