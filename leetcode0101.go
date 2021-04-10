@@ -15,10 +15,7 @@ func check(p, q *TreeNode) bool {
     if q == nil && p == nil {
         return true
     }
-    if q == nil && p != nil {
-        return false
-    }
-    if q != nil && p == nil {
+    if q == nil || p == nil {
         return false
     }
     return p.Val == q.Val && check(p.Left, q.Right) && check(p.Right, q.Left)
