@@ -50,20 +50,6 @@
  * }
  */
 func flatten(root *TreeNode)  {
-    curNode := root
-    for curNode != nil {
-        if curNode.Left != nil {
-            next := curNode.Left
-            p := next 
-            for p.Right != nil {
-                p = p.Right
-            }
-        
-            p.Right = curNode.Right
-            curNode.Left = nil
-            curNode.Right = next
-        }
-        curNode = curNode.Right
-    }
+    
 }
 ```
