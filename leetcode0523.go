@@ -1,23 +1,18 @@
 func checkSubarraySum(nums []int, k int) bool {
-	var sum int
-	for _, v := range nums {
-		sum += v
+	if len(nums) < 2 {
+		return false
 	}
-	left := 0
-	right := len(nums) - 1
-	for right-left >= 2 {
-		if sum%k == 0 {
-			return true
-		}
-		if right == 0 {
-			sum -= nums[left]
-			left++
+	mp := map[int]int{0: -1}
+	remainder := 0
+	for i, num := range nums {
+		remainder = (remainder + num) % k
+		if index, ok := mp[remainder]; ok {
+			if i-index >= 2 {
+				return true
+			}
 		} else {
-			sum -= nums[right]
-			right--
+			mp[remainder] = i
 		}
 	}
-	return false //TODO
+	return false
 }
-
-没有AC的版本回去再看看
