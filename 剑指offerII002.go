@@ -11,7 +11,7 @@ func addBinary(a string, b string) string {
         if i < lenB {
             carry += int(b[lenB-i-1] - '0')
         }
-        ans = strconv.Itoa(carry%2) + ans
+        ans = fmt.Sprintf("%d", carry%2) + ans
         carry /= 2
     }
     if carry > 0 {
