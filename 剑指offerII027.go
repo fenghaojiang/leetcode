@@ -13,12 +13,13 @@
     l2 := mid.Next
     mid.Next = nil
     r2 := reverseList(l2)
-    for head != nil && r2 != nil {
-        if head.Val != r2.Val {
+    p2 := r2
+    for head != nil && p2 != nil {
+        if head.Val != p2.Val {
             return false
         }
         head = head.Next
-        r2 = r2.Next
+        p2 = p2.Next
     }
     mid.Next = reverseList(r2)
     return true
