@@ -44,7 +44,7 @@
 
 
 
-```go
+```JavaScript
 /**
  * // Definition for a Node.
  * function Node(val,left,right) {
